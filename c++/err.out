@@ -1,0 +1,9 @@
+lca.cpp: In function 'int main()':
+lca.cpp:114:64: error: invalid conversion from 'int*' to 'std::vector<int>::size_type {aka long unsigned int}' [-fpermissive]
+    std::vector<int> inputs(inp_arr, sizeof(inp_arr)/sizeof(int));
+                                                                ^
+In file included from /usr/include/c++/4.8/vector:64:0,
+                 from lca.cpp:7:
+/usr/include/c++/4.8/bits/stl_vector.h:295:7: error:   initializing argument 1 of 'std::vector<_Tp, _Alloc>::vector(std::vector<_Tp, _Alloc>::size_type, const value_type&, const allocator_type&) [with _Tp = int; _Alloc = std::allocator<int>; std::vector<_Tp, _Alloc>::size_type = long unsigned int; std::vector<_Tp, _Alloc>::value_type = int; std::vector<_Tp, _Alloc>::allocator_type = std::allocator<int>]' [-fpermissive]
+       vector(size_type __n, const value_type& __value = value_type(),
+       ^
